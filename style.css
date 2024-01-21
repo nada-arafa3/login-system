@@ -1,0 +1,214 @@
+* {
+	margin: 0%;
+	padding: 0%;
+}
+.clr {
+	clear: both;
+}
+
+.form {
+	border-radius: 200px;
+
+	background-color: #f7f7f7;
+	width: 80vw;
+	margin: auto;
+	margin-top: 20vh;
+	position: relative;
+	height: 60vh;
+	flex-direction: column;
+}
+form {
+	width: 70%;
+	text-align: center;
+}
+.signin,
+.signup {
+	margin-block: 5vh;
+	top: var(
+		--top
+	);
+	bottom: var(
+		--bottom
+	);
+	left: var(
+		--left
+	);
+	z-index: 1;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	position: absolute;
+	color: rgb(
+		0,
+		0,
+		0
+	);
+	width: 40vw;
+}
+.signup {
+	right: 0%;
+	left: auto;
+}
+#layer {
+	z-index: 1;
+	right: 0px;
+	border-radius: 200px;
+	width: 40vw;
+	height: 100%;
+	position: absolute;
+
+	text-align: center;
+	color: white;
+	vertical-align: middle;
+	font-size: 20px;
+	background-color: #d8a35a;
+	transition: all
+		2s;
+}
+input {
+	margin-top: 3vh;
+	margin-inline: auto;
+	border: 1px
+		rgb(
+			57,
+			62,
+			65
+		)
+		solid;
+	outline: none;
+	display: block;
+	width: 92%;
+	height: 5vh;
+	border-radius: 6px;
+}
+label {
+	text-align: center;
+
+	font-size: larger;
+}
+.form .btn {
+	margin-block: 2vh;
+	border-radius: 21px;
+	width: 50%;
+
+	border: 2px
+		solid white;
+	outline: none;
+	font-size: larger;
+	color: #f7f7f7;
+	padding: 20px;
+	background-color: #d8a35a;
+}
+.form #btnup {
+	background-color: #a1d7f1;
+}
+p,
+span {
+	color: black;
+}
+span {
+	text-decoration: underline;
+
+	cursor: pointer;
+}
+span:hover {
+	color: #020253;
+}
+img {
+	width: 20%;
+	margin-block: 2vh;
+}
+h3 {
+	cursor: pointer;
+	width: 75%;
+	padding: 2vh;
+	border-radius: 25px;
+	margin-block: 2vh;
+	margin-inline: auto;
+}
+
+button {
+	cursor: pointer;
+}
+#logged {
+	width: 80%;
+	height: 50vh;
+	background-color: #d8a35a;
+	margin-inline: auto;
+	margin-top: 25vh;
+	font-size: 5rem;
+	text-align: center;
+	border-radius: 25px;
+}
+.nav {
+	width: 100%;
+	height: 10vh;
+	background-color: #d8a35a;
+	text-align: end;
+}
+.nav button {
+	font-size: x-large;
+	color: #f7f7f7;
+	background-color: #a1d7f1;
+	padding: 15px;
+	border-radius: 25px;
+	border: 0px;
+	margin: 1vh
+		5vh;
+}
+@media only screen and (max-width: 1060px) {
+	:root {
+		--bottom: 0px;
+		--left: 0px;
+		--right: 0px;
+		--top: 50%;
+	}
+	.signin,
+	.signup {
+		padding: 0%;
+
+		bottom: unset;
+		left: unset;
+		display: block;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		position: absolute;
+		color: rgb(
+			0,
+			0,
+			0
+		);
+		width: 100%;
+		height: 50%;
+	}
+	.form {
+		height: 100vh;
+
+		margin-top: 1vh;
+	}
+	.signup {
+		bottom: 0%;
+		margin-top: 6vh;
+		height: 38%;
+	}
+	.signin {
+		top: unset;
+		margin-top: -6%;
+	}
+	#layer {
+		top: 50%;
+		z-index: 1;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		border-radius: 198px;
+		height: 50%;
+		width: 100%;
+		transition: all
+			2s;
+	}
+	input {
+		margin-top: 0px;
+	}
+}
